@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Repo Diagrammer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>GitHub Repo Diagram Generator</h1>
+      <section class="input-area">
+        <label for="repo-url">GitHub Repository URL</label>
+        <input type="url" id="repo-url" placeholder="https://github.com/owner/repo" />
+        <button id="analyze-btn">Analyze</button>
+        <div id="error" role="alert"></div>
+        <div id="spinner" class="hidden">Analyzing...</div>
+      </section>
+      <section id="results" class="hidden">
+        <div id="metadata"></div>
+        <div class="zoom">
+          <label for="zoom-select">Zoom in:</label>
+          <select id="zoom-select"></select>
+        </div>
+        <div class="tabs">
+          <button data-target="summary">Overview</button>
+          <button data-target="c4">Modules</button>
+          <button data-target="dependencies">Dependencies</button>
+          <button data-target="routes">Routes</button>
+          <button data-target="db">DB</button>
+          <button data-target="raw">Raw JSON</button>
+        </div>
+        <div id="summary" class="tab-content"></div>
+        <div id="c4" class="tab-content hidden"><div class="mermaid" id="c4-diagram"></div></div>
+        <div id="dependencies" class="tab-content hidden"><div class="mermaid" id="dependencies-diagram"></div></div>
+        <div id="routes" class="tab-content hidden"><div class="mermaid" id="routes-diagram"></div></div>
+        <div id="db" class="tab-content hidden"><div class="mermaid" id="db-diagram"></div></div>
+        <pre id="raw" class="tab-content hidden"></pre>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
