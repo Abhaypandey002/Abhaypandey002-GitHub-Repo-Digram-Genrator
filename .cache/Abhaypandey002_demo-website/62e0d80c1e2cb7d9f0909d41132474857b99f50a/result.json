@@ -1,0 +1,45 @@
+{
+  "repo": {
+    "name": "Abhaypandey002/demo-website",
+    "default_branch": "main",
+    "sha": "62e0d80c1e2cb7d9f0909d41132474857b99f50a",
+    "languages": {
+      "other": 34,
+      "sample": 48,
+      "html": 3,
+      "conf": 3,
+      "md": 3,
+      "javascript": 3,
+      "css": 3
+    }
+  },
+  "diagrams": {
+    "c4_modules_mermaid": "graph TD\n    _[.]\n    _ --> __script_js[script.js]",
+    "dependencies_mermaid": "graph LR\n    Empty[No dependencies detected]",
+    "routes_mermaid": "graph TD\n    NoRoutes[No routes detected]",
+    "db_mermaid": "erDiagram\n    NONE {\n        string placeholder\n    }"
+  },
+  "summaries": {
+    "high_level": [
+      "Summaries unavailable (LLM offline).",
+      "Diagrams and static analysis are still provided."
+    ],
+    "focus_modules": [
+      {
+        "module": "script.js",
+        "why": "degree centrality 1.00",
+        "notes": "LLM unavailable"
+      }
+    ]
+  },
+  "modules": {
+    ".": [
+      "script.js"
+    ]
+  },
+  "limits": {
+    "file_count_scanned": 29,
+    "files_sampled_for_llm": 1,
+    "max_nodes": 40
+  }
+}

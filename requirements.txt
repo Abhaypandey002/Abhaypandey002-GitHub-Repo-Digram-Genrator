@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+networkx
+tree-sitter
+tree-sitter-languages
+pydantic
+requests
+pytest

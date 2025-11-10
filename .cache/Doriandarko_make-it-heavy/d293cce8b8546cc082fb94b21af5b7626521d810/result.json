@@ -1,0 +1,70 @@
+{
+  "repo": {
+    "name": "Doriandarko/make-it-heavy",
+    "default_branch": "main",
+    "sha": "d293cce8b8546cc082fb94b21af5b7626521d810",
+    "languages": {
+      "other": 28,
+      "sample": 35,
+      "python": 28,
+      "yaml": 2,
+      "md": 2,
+      "txt": 2
+    }
+  },
+  "diagrams": {
+    "c4_modules_mermaid": "graph TD\n    _[.]\n    _ --> __agent_py[agent.py]\n    _ --> __main_py[main.py]\n    _ --> __make_it_heavy_py[make_it_heavy.py]\n    _ --> __orchestrator_py[orchestrator.py]\n    tools[tools]\n    tools --> tools___init___py[__init__.py]\n    tools --> tools_base_tool_py[base_tool.py]\n    tools --> tools_calculator_tool_py[calculator_tool.py]\n    tools --> tools_read_file_tool_py[read_file_tool.py]\n    tools --> tools_search_tool_py[search_tool.py]\n    tools --> tools_task_done_tool_py[task_done_tool.py]\n    tools --> tools_write_file_tool_py[write_file_tool.py]",
+    "dependencies_mermaid": "graph LR\n    agent_py[agent.py] --> json[json]\n    agent_py[agent.py] --> openai[openai]\n    agent_py[agent.py] --> tools[tools]\n    agent_py[agent.py] --> yaml[yaml]\n    main_py[main.py] --> agent[agent]\n    make_it_heavy_py[make_it_heavy.py] --> orchestrator[orchestrator]\n    make_it_heavy_py[make_it_heavy.py] --> os[os]\n    make_it_heavy_py[make_it_heavy.py] --> sys[sys]\n    make_it_heavy_py[make_it_heavy.py] --> threading[threading]\n    make_it_heavy_py[make_it_heavy.py] --> time[time]\n    orchestrator_py[orchestrator.py] --> agent[agent]\n    orchestrator_py[orchestrator.py] --> concurrent_futures[concurrent.futures]\n    orchestrator_py[orchestrator.py] --> json[json]\n    orchestrator_py[orchestrator.py] --> threading[threading]\n    orchestrator_py[orchestrator.py] --> time[time]\n    orchestrator_py[orchestrator.py] --> typing[typing]\n    orchestrator_py[orchestrator.py] --> yaml[yaml]\n    tools___init___py[tools/__init__.py] --> _base_tool[.base_tool]\n    tools___init___py[tools/__init__.py] --> importlib[importlib]\n    tools___init___py[tools/__init__.py] --> os[os]\n    tools___init___py[tools/__init__.py] --> typing[typing]\n    tools_base_tool_py[tools/base_tool.py] --> abc[abc]\n    tools_base_tool_py[tools/base_tool.py] --> typing[typing]\n    tools_calculator_tool_py[tools/calculator_tool.py] --> _base_tool[.base_tool]\n    tools_calculator_tool_py[tools/calculator_tool.py] --> ast[ast]\n    tools_calculator_tool_py[tools/calculator_tool.py] --> math[math]\n    tools_calculator_tool_py[tools/calculator_tool.py] --> operator[operator]\n    tools_read_file_tool_py[tools/read_file_tool.py] --> _base_tool[.base_tool]\n    tools_read_file_tool_py[tools/read_file_tool.py] --> os[os]\n    tools_search_tool_py[tools/search_tool.py] --> _base_tool[.base_tool]\n    tools_search_tool_py[tools/search_tool.py] --> bs4[bs4]\n    tools_search_tool_py[tools/search_tool.py] --> ddgs[ddgs]\n    tools_search_tool_py[tools/search_tool.py] --> json[json]\n    tools_search_tool_py[tools/search_tool.py] --> requests[requests]\n    tools_task_done_tool_py[tools/task_done_tool.py] --> _base_tool[.base_tool]\n    tools_task_done_tool_py[tools/task_done_tool.py] --> datetime[datetime]\n    tools_write_file_tool_py[tools/write_file_tool.py] --> _base_tool[.base_tool]\n    tools_write_file_tool_py[tools/write_file_tool.py] --> os[os]\n    tools_write_file_tool_py[tools/write_file_tool.py] --> tempfile[tempfile]",
+    "routes_mermaid": "graph TD\n    NoRoutes[No routes detected]",
+    "db_mermaid": "erDiagram\n    NONE {\n        string placeholder\n    }",
+    "readme_overview_mermaid": "graph TD\n    Overview[System Overview]\n    Overview --> Comp1[\ud83d\ude80 Make It heavy]\n    Overview --> Comp2[\ud83c\udf1f Features]\n    Overview --> Comp3[\ud83d\ude80 Quick Start]\n    Overview --> Comp4[Create virtual environment with uv]\n    Overview --> Comp5[Activate virtual environment]\n    Overview --> Comp6[Edit config.yaml and replace YOUR API KEY HERE with your OpenRouter API key]\n    Overview --> Comp7[\ud83c\udfaf Usage]\n    Overview --> Comp8[\ud83c\udfd7\ufe0f Architecture]"
+  },
+  "summaries": {
+    "high_level": [
+      "* Project purpose: A simple Python script to generate a weighted average of two lists of numbers.",
+      "* Main components:",
+      "+ `main.py`: The main entry point for the script.",
+      "+ `utils.py`: A module containing utility functions used throughout the project.",
+      "+ `data.py`: A module defining the data structures used in the script."
+    ],
+    "focus_modules": [
+      {
+        "module": "orchestrator.py",
+        "why": "degree centrality 0.21",
+        "notes": "The `orchestrator.py` module plays a crucial role in managing the workflow of tasks within the system, ensuring that each task is executed in the correct order and with the necessary dependencies, thereby maintaining data consistency and integrity.\n\nThis module is responsible for orchestrating the execution of tasks, including scheduling, resource allocation, and communication between different components."
+      },
+      {
+        "module": "make_it_heavy.py",
+        "why": "degree centrality 0.15",
+        "notes": "The `make_it_heavy.py` module plays a crucial role in the project's build process by handling the heavy lifting of compiling and packaging the application, ensuring that it is properly built and distributed to end-users.\n\nIts primary responsibilities include executing compilation steps, building the executable package, and deploying it to various environments."
+      },
+      {
+        "module": "tools/search_tool.py",
+        "why": "degree centrality 0.15",
+        "notes": "The `tools/search_tool.py` module plays a crucial role in the search functionality of the system by providing a utility function for searching through various data structures, thereby enabling efficient and effective retrieval of relevant information.\n\nIts primary responsibility is to facilitate fast and accurate search operations on predefined data sets."
+      }
+    ]
+  },
+  "modules": {
+    ".": [
+      "agent.py",
+      "main.py",
+      "make_it_heavy.py",
+      "orchestrator.py"
+    ],
+    "tools": [
+      "__init__.py",
+      "base_tool.py",
+      "calculator_tool.py",
+      "read_file_tool.py",
+      "search_tool.py",
+      "task_done_tool.py",
+      "write_file_tool.py"
+    ]
+  },
+  "limits": {
+    "file_count_scanned": 39,
+    "files_sampled_for_llm": 11,
+    "max_nodes": 40
+  }
+}

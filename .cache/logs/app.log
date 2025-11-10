@@ -1,0 +1,21 @@
+2025-11-10 11:16:43,828 [INFO] services.git_clone: Cloning https://github.com/Abhaypandey002/demo-website.git into .cache\Abhaypandey002_demo-website\62e0d80c1e2cb7d9f0909d41132474857b99f50a\repo
+2025-11-10 11:16:44,621 [ERROR] services.git_clone: Git command failed: Cloning into '.cache\Abhaypandey002_demo-website\62e0d80c1e2cb7d9f0909d41132474857b99f50a\repo'...
+fatal: Remote branch HEAD not found in upstream origin
+2025-11-10 11:26:04,389 [INFO] services.git_clone: Cloning https://github.com/Abhaypandey002/demo-website.git into .cache\Abhaypandey002_demo-website\62e0d80c1e2cb7d9f0909d41132474857b99f50a\repo
+2025-11-10 11:26:05,172 [ERROR] services.git_clone: Git command failed: Cloning into '.cache\Abhaypandey002_demo-website\62e0d80c1e2cb7d9f0909d41132474857b99f50a\repo'...
+fatal: Remote branch HEAD not found in upstream origin
+2025-11-10 11:26:54,984 [INFO] services.git_clone: Cloning https://github.com/Abhaypandey002/demo-website.git into .cache\Abhaypandey002_demo-website\62e0d80c1e2cb7d9f0909d41132474857b99f50a\repo
+2025-11-10 11:27:00,439 [WARNING] services.llm: LLM responded with status 500
+2025-11-10 11:27:03,460 [WARNING] services.llm: LLM responded with status 500
+2025-11-10 11:38:50,790 [INFO] services.analyze: Returning cached result for 62e0d80c1e2cb7d9f0909d41132474857b99f50a
+2025-11-10 12:06:02,770 [INFO] services.git_clone: Cloning https://github.com/Abhaypandey002/Movie_Recommendation_System.git into .cache\Abhaypandey002_Movie_Recommendation_System\42c527497e65693c5d90ef516f51b6a3e4576edd\repo
+2025-11-10 12:10:46,886 [INFO] services.git_clone: Cloning https://github.com/Abhaypandey002/Abhaypandey002-GitHub-Repo-Digram-Genrator.git into .cache\Abhaypandey002_Abhaypandey002-GitHub-Repo-Digram-Genrator\8ed72bf546c6f304222c7313d200805fa69a8cf1\repo
+2025-11-10 12:11:37,835 [WARNING] services.llm: LLM unavailable: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=30)
+2025-11-10 12:26:56,228 [INFO] services.git_clone: Cloning https://github.com/jason-liu22/netflix-clone-react-typescript.git into .cache\jason-liu22_netflix-clone-react-typescript\0a0ad44894ab3196f76d7f0a343dc6bd6c0831bb\repo
+2025-11-10 12:27:02,524 [WARNING] services.llm: LLM responded with status 500
+2025-11-10 12:27:03,374 [WARNING] services.llm: LLM responded with status 500
+2025-11-10 12:27:04,217 [WARNING] services.llm: LLM responded with status 500
+2025-11-10 12:27:05,055 [WARNING] services.llm: LLM responded with status 500
+2025-11-10 12:37:07,827 [INFO] services.analyze: Returning cached result for 0a0ad44894ab3196f76d7f0a343dc6bd6c0831bb
+2025-11-10 12:41:13,930 [INFO] services.git_clone: Cloning https://github.com/Doriandarko/make-it-heavy.git into .cache\Doriandarko_make-it-heavy\d293cce8b8546cc082fb94b21af5b7626521d810\repo
+2025-11-10 12:41:18,943 [INFO] services.git_clone: Using cached clone at .cache\Doriandarko_make-it-heavy\d293cce8b8546cc082fb94b21af5b7626521d810\repo

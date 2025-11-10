@@ -1,0 +1,109 @@
+{
+  "repo": {
+    "name": "jason-liu22/netflix-clone-react-typescript",
+    "default_branch": "main",
+    "sha": "0a0ad44894ab3196f76d7f0a343dc6bd6c0831bb",
+    "languages": {
+      "other": 12,
+      "example": 0,
+      "sample": 13,
+      "yml": 1,
+      "json": 6,
+      "html": 1,
+      "txt": 0,
+      "md": 0,
+      "tsx": 37,
+      "javascript": 24
+    }
+  },
+  "diagrams": {
+    "c4_modules_mermaid": "graph TD\n    _[.]\n    _ --> __vite_config_ts[vite.config.ts]\n    src[src]\n    src --> src_CustomClassNameSetup_ts[CustomClassNameSetup.ts]\n    src --> src_videojs-youtube_d_ts[videojs-youtube.d.ts]\n    src --> src_vite-env_d_ts[vite-env.d.ts]\n    src\\components\\animate\\variants[src\\components\\animate\\variants]\n    src\\components\\animate\\variants --> src\\components\\animate\\variants_Wrap_ts[Wrap.ts]\n    src\\components\\animate\\variants\\fade[src\\components\\animate\\variants\\fade]\n    src\\components\\animate\\variants\\fade --> src\\components\\animate\\variants\\fade_FadeIn_ts[FadeIn.ts]\n    src\\components\\animate\\variants\\fade --> src\\components\\animate\\variants\\fade_FadeOut_ts[FadeOut.ts]\n    src\\components\\animate\\variants\\zoom[src\\components\\animate\\variants\\zoom]\n    src\\components\\animate\\variants\\zoom --> src\\components\\animate\\variants\\zoom_ZoomIn_ts[ZoomIn.ts]\n    src\\components\\layouts[src\\components\\layouts]\n    src\\components\\layouts --> src\\components\\layouts_index_ts[index.ts]\n    src\\constant[src\\constant]\n    src\\constant --> src\\constant_index_ts[index.ts]\n    src\\hooks[src\\hooks]\n    src\\hooks --> src\\hooks_redux_ts[redux.ts]\n    src\\hooks --> src\\hooks_useIntersectionObserver_ts[useIntersectionObserver.ts]\n    src\\hooks --> src\\hooks_useOffSetTop_ts[useOffSetTop.ts]\n    src\\hooks --> src\\hooks_useWindowSize_ts[useWindowSize.ts]\n    src\\lib[src\\lib]\n    src\\lib --> src\\lib_createSafeContext_ts[createSafeContext.ts]\n    src\\store[src\\store]\n    src\\store --> src\\store_index_ts[index.ts]\n    src\\store\\slices[src\\store\\slices]\n    src\\store\\slices --> src\\store\\slices_apiSlice_ts[apiSlice.ts]\n    src\\store\\slices --> src\\store\\slices_configuration_ts[configuration.ts]\n    src\\store\\slices --> src\\store\\slices_discover_ts[discover.ts]\n    src\\store\\slices --> src\\store\\slices_genre_ts[genre.ts]\n    src\\theme[src\\theme]\n    src\\theme --> src\\theme_palette_ts[palette.ts]\n    src\\types[src\\types]\n    src\\types --> src\\types_Common_ts[Common.ts]\n    src\\types --> src\\types_Genre_ts[Genre.ts]\n    src\\types --> src\\types_Movie_ts[Movie.ts]\n    src\\utils[src\\utils]\n    src\\utils --> src\\utils_common_ts[common.ts]\n    src\\utils --> src\\utils_index_ts[index.ts]",
+    "dependencies_mermaid": "graph LR\n    src_CustomClassNameSetup_ts[src/CustomClassNameSetup.ts] --> \"@mui_material_className\";[\"@mui/material/className\";]\n    src_constant_index_ts[src/constant/index.ts] --> \"src_types_Genre\";[\"src/types/Genre\";]\n    src_hooks_redux_ts[src/hooks/redux.ts] --> \"___store\";[\"../store\";]\n    src_hooks_redux_ts[src/hooks/redux.ts] --> \"react_redux\";[\"react-redux\";]\n    src_hooks_useIntersectionObserver_ts[src/hooks/useIntersectionObserver.ts] --> \"react\";[\"react\";]\n    src_hooks_useOffSetTop_ts[src/hooks/useOffSetTop.ts] --> \"react\";[\"react\";]\n    src_hooks_useWindowSize_ts[src/hooks/useWindowSize.ts] --> \"react\";[\"react\";]\n    src_lib_createSafeContext_ts[src/lib/createSafeContext.ts] --> \"react\";[\"react\";]\n    src_store_index_ts[src/store/index.ts] --> \"__slices_apiSlice\";[\"./slices/apiSlice\";]\n    src_store_index_ts[src/store/index.ts] --> \"__slices_discover\";[\"./slices/discover\";]\n    src_store_index_ts[src/store/index.ts] --> \"@reduxjs_toolkit\";[\"@reduxjs/toolkit\";]\n    src_store_slices_apiSlice_ts[src/store/slices/apiSlice.ts] --> \"@reduxjs_toolkit_query_react\";[\"@reduxjs/toolkit/query/react\";]\n    src_store_slices_apiSlice_ts[src/store/slices/apiSlice.ts] --> \"src_constant\";[\"src/constant\";]\n    src_store_slices_configuration_ts[src/store/slices/configuration.ts] --> \"__apiSlice\";[\"./apiSlice\";]\n    src_store_slices_configuration_ts[src/store/slices/configuration.ts] --> \"src_constant\";[\"src/constant\";]\n    src_store_slices_discover_ts[src/store/slices/discover.ts] --> \"__apiSlice\";[\"./apiSlice\";]\n    src_store_slices_discover_ts[src/store/slices/discover.ts] --> \"@reduxjs_toolkit\";[\"@reduxjs/toolkit\";]\n    src_store_slices_discover_ts[src/store/slices/discover.ts] --> \"src_constant\";[\"src/constant\";]\n    src_store_slices_discover_ts[src/store/slices/discover.ts] --> \"src_types_Common\";[\"src/types/Common\";]\n    src_store_slices_discover_ts[src/store/slices/discover.ts] --> \"src_types_Movie\";[\"src/types/Movie\";]\n    src_store_slices_genre_ts[src/store/slices/genre.ts] --> \"__apiSlice\";[\"./apiSlice\";]\n    src_store_slices_genre_ts[src/store/slices/genre.ts] --> \"src_constant\";[\"src/constant\";]\n    src_store_slices_genre_ts[src/store/slices/genre.ts] --> \"src_types_Genre\";[\"src/types/Genre\";]\n    src_theme_palette_ts[src/theme/palette.ts] --> \"@mui_material\";[\"@mui/material\";]\n    src_types_Common_ts[src/types/Common.ts] --> \"src_types_Movie\";[\"src/types/Movie\";]\n    src_types_Movie_ts[src/types/Movie.ts] --> '__Common';['./Common';]\n    src_types_Movie_ts[src/types/Movie.ts] --> '__Genre';['./Genre';]\n    vite_config_ts[vite.config.ts] --> '@vitejs_plugin_react'['@vitejs/plugin-react']\n    vite_config_ts[vite.config.ts] --> 'vite'['vite']\n    vite_config_ts[vite.config.ts] --> 'vite_tsconfig_paths'['vite-tsconfig-paths']",
+    "routes_mermaid": "graph TD\n    NoRoutes[No routes detected]",
+    "db_mermaid": "erDiagram\n    NONE {\n        string placeholder\n    }"
+  },
+  "summaries": {
+    "high_level": [
+      "Summaries unavailable (LLM offline).",
+      "Diagrams and static analysis are still provided."
+    ],
+    "focus_modules": [
+      {
+        "module": "src/store/slices/discover.ts",
+        "why": "degree centrality 0.13",
+        "notes": "LLM unavailable"
+      },
+      {
+        "module": "src/store/index.ts",
+        "why": "degree centrality 0.08",
+        "notes": "LLM unavailable"
+      },
+      {
+        "module": "src/store/slices/genre.ts",
+        "why": "degree centrality 0.08",
+        "notes": "LLM unavailable"
+      }
+    ]
+  },
+  "modules": {
+    "src\\components\\animate\\variants\\fade": [
+      "FadeIn.ts",
+      "FadeOut.ts"
+    ],
+    "src\\components\\animate\\variants": [
+      "Wrap.ts"
+    ],
+    "src\\components\\animate\\variants\\zoom": [
+      "ZoomIn.ts"
+    ],
+    "src\\components\\layouts": [
+      "index.ts"
+    ],
+    "src\\constant": [
+      "index.ts"
+    ],
+    "src": [
+      "CustomClassNameSetup.ts",
+      "videojs-youtube.d.ts",
+      "vite-env.d.ts"
+    ],
+    "src\\hooks": [
+      "redux.ts",
+      "useIntersectionObserver.ts",
+      "useOffSetTop.ts",
+      "useWindowSize.ts"
+    ],
+    "src\\lib": [
+      "createSafeContext.ts"
+    ],
+    "src\\store": [
+      "index.ts"
+    ],
+    "src\\store\\slices": [
+      "apiSlice.ts",
+      "configuration.ts",
+      "discover.ts",
+      "genre.ts"
+    ],
+    "src\\theme": [
+      "palette.ts"
+    ],
+    "src\\types": [
+      "Common.ts",
+      "Genre.ts",
+      "Movie.ts"
+    ],
+    "src\\utils": [
+      "common.ts",
+      "index.ts"
+    ],
+    ".": [
+      "vite.config.ts"
+    ]
+  },
+  "limits": {
+    "file_count_scanned": 107,
+    "files_sampled_for_llm": 20,
+    "max_nodes": 40
+  }
+}
